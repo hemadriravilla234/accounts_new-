@@ -28,6 +28,7 @@ output application/json
                         <ee:set-variable variableName="httpStatus">400</ee:set-variable>
                     </ee:variables>
                 </ee:transform>
+				<logger level="INFO" doc:name="Logger" doc:id="a10cace7-e776-456d-8712-26c51324d3af" message="trsform msg invoked"/>
             </on-error-propagate>
             <on-error-propagate type="APIKIT:NOT_FOUND">
                 <ee:transform xmlns:ee="http://www.mulesoft.org/schema/mule/ee/core" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/ee/core/current/mule-ee.xsd">
